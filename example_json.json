@@ -1,0 +1,28 @@
+{
+    "timeline":
+    {
+        "headline":"Fanning grants land",
+        "type":"default",
+		"startDate":"1804",
+		"text":"<p>Edmund Fanning, the Island’s second Lieutenant-Governor, granted two blocks of his own land to the Crown, as a site “for the purpose of laying the foundation of a College for the education of youth in the learned languages, the arts and sciences, and all the branches of useful and polite literature.”</p>",
+		"asset":
+        {
+            "media":"http://www.gov.pe.ca/olg/gallery/photos/large/02Fanning.jpg",
+            "credit":"Photograph courtesy of PEI Public Archives and Records Office, Reference Number 2320/60-1",
+            "caption":"The Honourable General Edmund Fanning,MA, D.D.C., LL.D. Governor from 4 November 1786 to 10 May 1804"
+        },
+        "date": [
+			{
+                "startDate":"1834",
+				"endDate":"1856",
+                "headline":"Central Academy",
+				"text":"<p>The Central Academy school, which was established in 1836, was renamed Prince of Wales College in 1860 to commemorate the visit of the Prince of Wales to Prince Edward Island. This photograph features the original Central Academy building and the Prince of Wales faculty of 1900. The building of the new Prince of Wales structure can be seen in the background. The new building was completed in 1900.</p>",
+                "asset":
+                {
+                    "media":"http://www.edu.pe.ca/paro/exhibits/images/pw230176.jpg",
+                    "credit":"Public Archives and Records Office, Acc. 2301/76"
+                }
+            }
+        ]
+    }
+}

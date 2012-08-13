@@ -1,0 +1,47 @@
+<?php
+
+function timelinejs_menu() {
+  $items = array();
+
+  $items['timeline'] = array(
+    'title' => 'Timeline',
+    'description' => 'Timeline',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('timelinejs_form'),
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+function timelinejs_form() {
+  $module_path = drupal_get_path('module', 'timelinejs');
+
+  drupal_add_css($module_path . '/css/timeline.css');
+  $js = <<<JS
+var timeline_config = {
+				width: 	"100%",
+				height: "100%",
+				source: '/$module_path/example_json.json',
+				start_at_end:	true,					//OPTIONAL
+				hash_bookmark: true,					//OPTIONAL
+				css: 	'/$module_path/css/timeline.css',	//OPTIONAL
+				js: 	'/$module_path/js/timeline-min.js'	//OPTIONAL
+			}
+JS;
+
+  drupal_add_js($js, array('type' => 'inline'));
+
+  $form = array();
+
+  $form['timeline'] = array(
+    '#markup' => '<div id="timeline-embed"></div>',
+  );
+
+  $form['timeline-embed'] = array(
+    '#markup' => '<script type="text/javascript" src="/' . $module_path . '/js/timeline-embed.js"></script>',
+  );
+  
+  return $form;
+}
