@@ -26,8 +26,8 @@ var timeline_config = {
 				source: '/$module_path/example_json.json',
 				start_at_end:	true,					//OPTIONAL
 				hash_bookmark: true,					//OPTIONAL
-				//css: 	'/$module_path/css/timeline.css',	//OPTIONAL
-				//js: 	'/$module_path/js/timeline-min.js'	//OPTIONAL
+				css: 	'/$module_path/css/timeline.css',	//OPTIONAL
+				js: 	'/$module_path/js/timeline-min.js'	//OPTIONAL
 			}
 JS;
 
