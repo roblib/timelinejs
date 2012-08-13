@@ -17,7 +17,7 @@ function timelinejs_menu() {
 
 function timelinejs_form() {
   $module_path = drupal_get_path('module', 'timelinejs');
-
+var_dump("'");
   drupal_add_css($module_path . '/css/timeline.css');
   $js = <<<JS
 var timeline_config = {
